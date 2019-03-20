@@ -8,9 +8,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import "./layout.css"
+import "./layout.scss"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -25,10 +24,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div>
-          <div className="wrapper__left-wrapper">Section 1</div>
-          <div className="wrapper__right-wrapper">Section 2</div>
-        </div>
+        <div>{children}</div>
       </>
     )}
   />
