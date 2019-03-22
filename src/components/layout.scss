@@ -19,3 +19,39 @@ body {
   flex-direction: column;
   padding: 30px;
 }
+.contact-form {
+  box-sizing: border-box;
+  input,
+  textarea {
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    display: block;
+    border-radius: 0.25rem;
+    margin-top: 0.35rem;
+    width: 70%;
+  }
+  button {
+    color: #fff;
+    border-color: #4072e8;
+    background-color: #4072e8;
+    width: 70%;
+    margin-top: 0.35rem;
+    border-radius: 0.25rem;
+  }
+  button:hover {
+    background-color: #1a54db;
+  }
+}
+.header-firstname {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+.header-lastname {
+  color: #1a54db;
+}
+.header-links {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 3rem;
+}
