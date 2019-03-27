@@ -8,8 +8,12 @@ const Links = props => {
       {props.posts.map(post => {
         return (
           <div key={post.node.id}>
-            <h3>{post.node.frontmatter.title}</h3>
-            {post.node.frontmatter.description}
+            <h3 className="link-title">{post.node.frontmatter.title}</h3>
+            <i className="link-date">{post.node.frontmatter.date}</i>
+            <p className="link-description">
+              {post.node.frontmatter.description}
+            </p>
+
             <Link to={post.node.frontmatter.path}>View Post</Link>
           </div>
         )

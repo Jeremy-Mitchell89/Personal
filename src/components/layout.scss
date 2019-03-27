@@ -1,21 +1,28 @@
 body {
   font-family: "Bitter";
+  background: #fafafa;
+  font-size: 0.9rem;
 }
 
 .wrapper {
   display: flex;
   width: 100%;
   flex-direction: row;
+  @media (max-width: 900px) {
+    display: block;
+  }
 }
 .wrapper__left-wrapper {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 100%;
   padding: 30px;
 }
 .wrapper__right-wrapper {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 30px;
 }
@@ -54,4 +61,21 @@ body {
   margin-top: 0;
   font-weight: bold;
   font-size: 3rem;
+}
+.link-title {
+  margin-bottom: 0;
+}
+.link-date {
+  margin-top: 0;
+}
+.link-description {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.git-link {
+  width: 50px;
+  height: 25px;
+}
+.icon-github {
+  width: 50px;
 }

@@ -1,6 +1,7 @@
 import React from "react"
 import ContactForm from "../components/contactForm"
 import Image from "../components/image"
+import git from "./icons/GitHub_Logo.png"
 
 const PersonalInfo = () => {
   return (
@@ -9,6 +10,10 @@ const PersonalInfo = () => {
       <h1 className="header-firstname">
         Jeremy <span className="header-lastname">Mitchell</span>
       </h1>
+
+      <a className="git-link" href="https://github.com/Jeremy-Mitchell89">
+        <img src={git} alt="github link" className="icon-github" />
+      </a>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Risus nullam eget
