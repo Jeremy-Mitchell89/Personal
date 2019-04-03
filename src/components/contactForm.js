@@ -25,13 +25,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   return (
-    <form
-      data-netlify="true"
-      name="contact"
-      className="contact-form"
-      onSubmit={handleSubmit}
-    >
-      <input type="hidden" name="form-name" value="contact" />
+    <form name="contact" className="contact-form" onSubmit={handleSubmit}>
       <div>
         <label>Your Email</label>
         <input
