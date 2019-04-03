@@ -10,27 +10,27 @@ const PersonalInfo = () => {
       <h1 className="header-firstname">
         Jeremy <span className="header-lastname">Mitchell</span>
       </h1>
-
       <a className="git-link" href="https://github.com/Jeremy-Mitchell89">
         <img src={git} alt="github link" className="icon-github" />
       </a>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Risus nullam eget
-        felis eget nunc lobortis. Placerat vestibulum lectus mauris ultrices
-        eros in cursus turpis massa. Volutpat odio facilisis mauris sit. Turpis
+        Hi. My name is Jeremy Mitchell. I am currently seeking a junior
+        javascript developer position in the Minneapolis area. I enjoy building
+        things that I can use in my everyday life and learning new technologies
+        along the way. I also like to contribute to the open-source community
+        wherever I am able.
       </p>
       <p>
-        Amet justo donec enim diam vulputate ut pharetra. Morbi tempus iaculis
-        urna id volutpat lacus laoreet. Est ullamcorper eget nulla facilisi. Eu
-        tincidunt tortor aliquam nulla facilisi cras. Metus dictum at tempor
-        commodo. Elementum sagittis vitae et leo duis. Ultrices mi tempus
-        imperdiet nulla malesuada pellentesque elit. Lacus luctus accumsan
-        tortor posuere ac ut consequat. Dictum sit amet justo donec enim diam
+        I'm always working on something new, my latest project is called Lift
+        Log. It's an app created using Nextjs to help me track my workouts and
+        stats and its source can be viewed{" "}
+        <a href="https://lift-react-prod.herokuapp.com/">here</a>.
       </p>
       <p>
-        Thanks for checking out my site. Email me at _______ at gmail dot com or
-        use the form below if you'd like to chat.
+        Thanks for the visit. Email me at jeremy.mitchell0627@gmail.com or use
+        the form below if you would like to chat. If you like this site you can{" "}
+        <a href="https://github.com/Jeremy-Mitchell89/Personal">check it out</a>
+        . It's written using a React framework named Gatsby.
       </p>
       <ContactForm />
     </div>

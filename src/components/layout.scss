@@ -79,3 +79,19 @@ body {
 .icon-github {
   width: 50px;
 }
+a {
+  background-image: none;
+  color: #4072e8;
+}
+a:hover {
+  text-decoration: underline;
+}
+.link-post {
+  margin-right: 12px;
+}
+.link-github {
+  margin-right: 12px;
+}
+.fa-external-link-alt {
+  color: #1a54db;
+}

@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import axios from "axios"
 
 const ContactForm = () => {
-  const [email, setEmail] = useState("test@test.com")
-  const [message, setMessage] = useState("test")
+  const [email, setEmail] = useState("")
+  const [message, setMessage] = useState("")
   return (
     <form
       className="contact-form"

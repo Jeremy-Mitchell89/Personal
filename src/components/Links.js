@@ -13,8 +13,14 @@ const Links = props => {
             <p className="link-description">
               {post.node.frontmatter.description}
             </p>
-
-            <Link to={post.node.frontmatter.path}>View Post</Link>
+            <i class="fas fa-external-link-alt" />
+            <Link className="link-post" to={post.node.frontmatter.path}>
+              View Post
+            </Link>
+            <i class="fas fa-external-link-alt" />
+            <Link className="link-github" to={post.node.frontmatter.github}>
+              View on Github
+            </Link>
           </div>
         )
       })}
