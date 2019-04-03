@@ -1,18 +1,21 @@
 import React, { useState } from "react"
 
-handleSubmit = e => {
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({ "form-name": "contact", ...this.state }),
-  })
-    .then(() => alert("Success!"))
-    .catch(error => alert(error))
-
-  e.preventDefault()
-}
-
 const ContactForm = () => {
+  function handleSubmit(e) {
+    // axios.post("/").then((req, res) => {
+    //   console.log(req)
+    // })
+    e.preventDefault()
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", email: email, message: message }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+
+    e.preventDefault()
+  }
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   return (
@@ -20,7 +23,6 @@ const ContactForm = () => {
       data-netlify="true"
       name="contact"
       className="contact-form"
-      //placeholder for form submit TODO replace with netlify info
       onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
