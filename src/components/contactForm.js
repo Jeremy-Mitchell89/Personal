@@ -25,7 +25,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   return (
-    <form name="contact" className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit}>
       <div>
         <label>Your Email</label>
         <input
