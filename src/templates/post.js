@@ -21,6 +21,8 @@ export const postQuery = graphql`
         date
         path
         title
+        github
+        demo
       }
     }
   }
