@@ -28,6 +28,8 @@ export const pageQuery = graphql`
             path
             github
             demo
+            backend
+            frontend
           }
         }
       }

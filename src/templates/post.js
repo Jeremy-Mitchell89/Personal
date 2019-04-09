@@ -23,6 +23,8 @@ export const postQuery = graphql`
         title
         github
         demo
+        backend
+        frontend
       }
     }
   }

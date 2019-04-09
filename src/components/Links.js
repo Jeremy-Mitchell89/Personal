@@ -17,15 +17,40 @@ const Links = props => {
             <a className="link-post" href={post.node.frontmatter.path}>
               View Post
             </a>
-            <i className="fas fa-external-link-alt" />
-            <a className="link-github" href={post.node.frontmatter.github}>
-              View on Github
-            </a>
+
+            {post.node.frontmatter.github ? (
+              <>
+                <i className="fas fa-external-link-alt" />
+                <a className="link-github" href={post.node.frontmatter.github}>
+                  View on Github
+                </a>
+              </>
+            ) : null}
+
             {post.node.frontmatter.demo ? (
               <div>
                 <i className="fas fa-external-link-alt" />
                 <a className="link-github" href={post.node.frontmatter.demo}>
                   View live demo
+                </a>
+              </div>
+            ) : null}
+            {post.node.frontmatter.backend ? (
+              <div>
+                <i className="fas fa-external-link-alt" />
+                <a className="link-github" href={post.node.frontmatter.backend}>
+                  View Backend on Github
+                </a>
+              </div>
+            ) : null}
+            {post.node.frontmatter.frontend ? (
+              <div>
+                <i className="fas fa-external-link-alt" />
+                <a
+                  className="link-github"
+                  href={post.node.frontmatter.frontend}
+                >
+                  View Frontend on Github
                 </a>
               </div>
             ) : null}
