@@ -14,7 +14,7 @@ import "@fullcalendar/core/main.css"
 import "@fullcalendar/daygrid/main.css"
 import "@fullcalendar/timegrid/main.css"
 
-const IndexPage = ({ data }) => {
+const calendarPage = ({ data }) => {
   const postArray = []
   data.allMarkdownRemark.edges.map(post => {
     postArray.push({
@@ -65,4 +65,4 @@ export const pageQuery = graphql`
   }
 `
 
-export default IndexPage
+export default calendarPage
