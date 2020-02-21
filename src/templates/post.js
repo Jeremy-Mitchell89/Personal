@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 
 export default function Template({ data }) {
-  //equivalent to const post = data.markdownRemark
   const { markdownRemark: post } = data
   return (
     <div>

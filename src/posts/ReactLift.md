@@ -5,6 +5,7 @@ date: "2019-04-08"
 description: "Second version of my personal tracking app for weightlifting built with React"
 frontend: "https://github.com/Jeremy-Mitchell89/LiftLog-react"
 backend: "https://github.com/Jeremy-Mitchell89/liftlog-api"
+type: "personal"
 ---
 
 Taking a similar idea to the Liftv1 project and going farther with it. Looking to get into front end frameworks I decided to use React

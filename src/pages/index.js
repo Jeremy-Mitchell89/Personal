@@ -4,6 +4,7 @@ import PersonalInfo from "../components/personalInfo"
 import Links from "../components/Links"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
+import { Link } from "gatsby"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -12,12 +13,13 @@ const IndexPage = ({ data }) => (
       <PersonalInfo />
       <Links posts={data.allMarkdownRemark.edges} />
     </div>
+    <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark {
+    allMarkdownRemark(filter: { frontmatter: { type: { eq: "personal" } } }) {
       edges {
         node {
           id

@@ -4,6 +4,7 @@ title: "Project: Liftv1"
 date: "2019-04-02"
 description: "First version of my personal tracking app for weightlifting"
 github: "https://github.com/Jeremy-Mitchell89/Liftv1"
+type: "personal"
 ---
 
 This was the first "real" application that I built. It is a simple tracker that I used to log my workouts. I wanted something a little more in-line with my

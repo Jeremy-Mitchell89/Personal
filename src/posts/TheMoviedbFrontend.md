@@ -5,6 +5,7 @@ date: "2019-04-03"
 description: "Front end created using the moviedb.org api and react"
 github: "https://github.com/Jeremy-Mitchell89/movieapiFrontend"
 demo: "https://jeremy-mitchell89.github.io/nowplaying"
+type: "personal"
 ---
 
 Using the open MovieDB.org I created a front end to display different datapoints offered by the api such as Now playing, Coming soon, and trending movies.
