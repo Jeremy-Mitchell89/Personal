@@ -27,20 +27,24 @@ const calendarPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <div style={{ width: "80%", margin: "0 auto" }}>
-        <FullCalendar
-          className="demo-app-calendar"
-          defaultView="dayGridMonth"
-          header={{
-            left: "prev,next today",
-            center: "title",
-            right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
-          }}
-          events={postArray}
-          eventClick={e => {
-            navigate(`../${format(e.event.start, "yyyy-MM-dd")}`)
-          }}
-          plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
-        />
+        <div>
+          {typeof window !== "undefined" && FullCalendar && (
+            <FullCalendar
+              className="demo-app-calendar"
+              defaultView="dayGridMonth"
+              header={{
+                left: "prev,next today",
+                center: "title",
+                right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
+              }}
+              events={postArray}
+              eventClick={e => {
+                navigate(`../${format(e.event.start, "yyyy-MM-dd")}`)
+              }}
+              plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}
+            />
+          )}
+        </div>
       </div>
       <Links posts={data.allMarkdownRemark.edges} />
     </Layout>
