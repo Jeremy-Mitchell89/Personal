@@ -102,5 +102,5 @@ a {
   width: 80%;
 }
 .fc-scroller .fc-day-grid-container {
-  min-height: 100%;
+  overflow: hidden !important;
 }
