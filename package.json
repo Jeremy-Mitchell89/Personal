@@ -30,7 +30,7 @@
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.19",
-    "set-value": "^3.0.1",
+    "set-value": "^4.0.1",
     "typography": "^0.16.19",
     "typography-theme-lincoln": "^0.16.19"
   },
